@@ -6,6 +6,7 @@ fn test_sync_code() {
     sync_code::Builder::new()
         .add("tests/data1/target.txt", "tests/data1/source.txt")
         .add("tests/data2/target.txt", "tests/data2/source.txt")
+        // Chain dependence
         .add("tests/data3/source2.txt", "tests/data3/source.txt")
         .add("tests/data3/target.txt", "tests/data3/source2.txt")
         .sync();
