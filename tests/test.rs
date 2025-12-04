@@ -1,5 +1,4 @@
 use std::fs;
-use sync_code;
 
 #[test]
 fn test_sync_code() {

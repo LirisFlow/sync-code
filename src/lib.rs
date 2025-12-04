@@ -34,18 +34,20 @@
 //! // $sync end
 //! ```
 
+#![allow(clippy::needless_doctest_main)]
 mod sync;
 
 use std::path::Path;
 use sync::Sync;
 
+#[derive(Default)]
 pub struct Builder {
     table: Vec<Sync>,
 }
 
 impl Builder {
     pub fn new() -> Self {
-        Builder { table: Vec::new() }
+        Self::default()
     }
 
     pub fn add<P: AsRef<Path>>(mut self, file: P, dep_file: P) -> Self {
