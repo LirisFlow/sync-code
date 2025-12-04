@@ -5,6 +5,6 @@ Don't change
 // $sync block2
 a2
 b2
-c2
-
+c2// $sync block3
+3
 // $sync end

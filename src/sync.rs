@@ -28,7 +28,7 @@ impl Sync {
         }
 
         if changed {
-            println!("Sync: {:?}", self.dest);
+            println!("Sync {:?}", self.dest);
             fs::write(&self.dest, output).unwrap();
         }
     }
@@ -37,11 +37,9 @@ impl Sync {
 fn get_marked_code<'a>(code: &'a str, mark: &str) -> (&'a str, &'a str, &'a str) {
     let i = code.find(mark);
     if let Some(i) = i {
-        let before = &code[..i];
-        let rest = &code[i..];
-        if let Some(i) = rest[1..].find("// $sync") {
-            let after = &rest[i..];
-            let code = &rest[..i];
+        let (before, rest) = code.split_at(i);
+        if let Some(i) = rest[8..].find("// $sync") {
+            let (code, after) = rest.split_at(i + 8);
             return (before, code, after);
         }
     }
