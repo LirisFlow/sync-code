@@ -1,9 +1,9 @@
 [package]
     authors = ["Jalon Wong <jalonwong@gmail.com>"]
-    categories = ["build"]
     description = "Synchronize code blocks between different files"
     documentation = "https://docs.rs/sync-code"
     edition = "2024"
+    keywords = ["build", "sync", "code"]
     license = "MIT OR Apache-2.0"
     name = "sync-code"
     readme = "README.md"
