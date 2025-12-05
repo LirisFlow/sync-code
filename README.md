@@ -40,4 +40,7 @@ fn code_you_want_to_sync() {
 
 See also [tests](/tests/test.rs).
 
+## 🔖 Keywords
+sync-code · rust · code generation · macro replacement · generics · readability · maintainability · developer tools 
+
 
