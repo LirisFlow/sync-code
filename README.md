@@ -5,9 +5,9 @@
 [![License](https://img.shields.io/badge/license-MIT%2FApache--2.0-blue.svg)](./LICENSE)
 [![Downloads](https://img.shields.io/crates/d/sync-code.svg)](https://crates.io/crates/sync-code)
 
-**sync-code** synchronizes code blocks across different files, providing a clear alternative to macros in certain scenarios.  
+**[sync-code](https://crates.io/crates/sync-code)** synchronizes code blocks across different files, providing a clear alternative to macros in certain scenarios.  
 When duplication is limited but the design is complex (for example, involving generics), macros often reduce readability and make maintenance harder.  
-By using sync-code instead, the code remains straightforward and maintainable, while development tools such as *Go-to-definition* and intelligent auto-completion continue to work as expected.
+By using **[sync-code](https://crates.io/crates/sync-code)** instead, the code remains straightforward and maintainable, while development tools such as *Go-to-definition* and intelligent auto-completion continue to work as expected.
 
 # Usage
 Run command:
@@ -39,4 +39,5 @@ fn code_you_want_to_sync() {
 ```
 
 See also [tests](/tests/test.rs).
+
 
