@@ -10,7 +10,7 @@
 When duplication is limited but the design is complex (for example, involving generics), macros often reduce readability and make maintenance harder.
 By using **[sync-code](https://crates.io/crates/sync-code)** instead, the code remains straightforward and maintainable, while development tools such as *Go-to-definition* and intelligent auto-completion continue to work as expected.
 
-# Usage
+# 🚀 Usage
 Run command:
 ```shell
 cargo add --build sync-code
@@ -41,3 +41,4 @@ See also [tests](/tests/test.rs).
 
 ## 🔖 Keywords
 sync-code · rust · code generation · macro replacement · generics · readability · maintainability · developer tools
+
